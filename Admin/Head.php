@@ -298,12 +298,12 @@ include("SessionValidator.php");
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="index.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="icon-layout menu-icon"></i>
@@ -344,6 +344,12 @@ include("SessionValidator.php");
 
               </ul>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Complaints.php">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Complaints</span>
+            </a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">

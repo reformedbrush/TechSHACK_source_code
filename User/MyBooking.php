@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+/* session_start(); */
 include("../Assets/Connection/Connection.php");
 ob_start();
 include("Head.php");

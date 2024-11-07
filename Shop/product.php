@@ -138,7 +138,8 @@ if (isset($_GET['pid'])) {
                     <th>PRODUCT</th>
                     <th>PRICE</th>
                     <th>PHOTO</th>
-                    <!-- <th>STOCK</th> -->
+                    <th>BALANCE STOCK</th>
+                    <th> STOCK</th>
                     <th>ACTIONS</th>
                 </tr>
             </thead>
@@ -155,7 +156,31 @@ if (isset($_GET['pid'])) {
                         <td><?php echo $row["product_name"]; ?></td>
                         <td><?php echo $row["product_price"]; ?></td>
                         <td><img src="../Assets/Files/Product/<?php echo $row["product_photo"]; ?>" class="img-thumbnail" alt="Product Image"></td>
-                        <!-- <td><?php //echo $row['stock_qty'] ?></td> -->
+                        <td>
+
+
+
+                        <?php
+                                           
+                            $stock4 = "select sum(stock_qty) as stock from tbl_stock where product_id = '" . $row["product_id"] . "'";
+											 $result2 =$con->query($stock4);
+                            				$row2=$result2->fetch_assoc();
+
+
+                                            $stocka = "select sum(cart_qty) as stock from tbl_cart where product_id = '" . $row["product_id"] . "'";
+                                            $result2a = $con->query($stocka);
+                                           $row2a=$result2a->fetch_assoc();
+
+                                           $stock = $row2["stock"] - $row2a["stock"];
+										  
+                                       
+                                   
+                                       
+                        
+                        echo $stock  
+                        
+                        ?></td>
+                         <td> <?php echo $row2["stock"]; ?></td>
                         <td class="action-links" align="center ">
                             <a href="product.php?pid=<?php echo $row['product_id']; ?>" class="btn btn-danger btn-sm">Delete</a>
                             <a href="Stock.php?asid=<?php echo $row['product_id']; ?>" class="btn btn-primary btn-sm">Manage Stock</a>

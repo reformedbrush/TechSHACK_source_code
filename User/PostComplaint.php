@@ -5,7 +5,7 @@ if(isset($_POST['btn_submit']))
 {
     $title=$_POST['txt_title'];
     $content=$_POST['txt_content'];
-    $ins="insert into tbl_complaint(complaint_title,complaint_content,product_id) values('".$title."','".$content."','".$_GET['pid']."')";
+    $ins="insert into tbl_complaint(complaint_date,complaint_title,complaint_content,product_id,user_id) values(curdate(),'".$title."','".$content."','".$_GET['pid']."','".$_SESSION['uid']."')";
     if($con->query($ins))
     {
         echo "<script>alert('Complaint Send'); window.location = 'MyBooking.php';</script>";
