@@ -31,7 +31,7 @@ Installation
 To set up and run the project locally, follow these steps:
 	1.	Clone the repository:
 
-git clone https://github.com/your-username/tech-shack.git
+git clone https://github.com/reformedbrush/computer-_emporium_sourcceCode
 cd tech-shack
 
 
@@ -42,7 +42,7 @@ In the connection.php file, configure the database connection settings such as d
 	4.	Start a local server:
 You can use XAMPP or any local server to run the PHP files. Place the project files in the htdocs directory and start the Apache and MySQL servers.
 	5.	Access the site:
-Open a browser and navigate to http://localhost/tech-shack/ to view the site.
+Open a browser and navigate to http://localhost/computer-_emporium_sourcceCode/ to view the site.
 
 Usage
 
