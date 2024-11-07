@@ -41,7 +41,7 @@ include("SessionValidator.php");
 						<li><a class="nav-link" href="about.php">About us</a></li>
 						<li><a class="nav-link" href="MyBooking.php">My Orders</a></li>
 						<li><a class="nav-link" href="../Guest/LogOut.php">Logout</a></li>
-						<li><a class="nav-link" href="contact.html">Contact us</a></li> -->
+						<!-- <li><a class="nav-link" href="contact.html">Contact us</a></li> -->
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
