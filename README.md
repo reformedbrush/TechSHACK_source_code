@@ -46,7 +46,7 @@ git clone https://github.com/reformedbrush/computer-_emporium_sourcceCode
 $con = new mysqli('localhost', 'username', 'password', 'database_name');
 
 
-	5.	Run the project in your browser at localhost/TechShack.
+	5.	Run the project in your browser at http://localhost/computer-_emporium_sourcceCode/
 
 How to Use
 
