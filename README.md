@@ -1,73 +1,73 @@
 # computer _emporium_sourcceCode
 
 
-Tech Shack - Online E-commerce Store
+Tech Shack - E-Commerce Website
 
-Tech Shack is an online platform dedicated to selling high-quality computers, gaming PCs, hardware components, and accessories. It provides users with an intuitive shopping experience, offering a wide selection of products from trusted brands, all available for secure purchase through a user-friendly interface.
+Description
+
+Tech Shack is an online e-commerce platform designed for selling computers, gaming PCs, hardware parts, and related products. This project provides a seamless experience for users to browse products, place orders, and resolve customer complaints.
+
+It is a college project created as part of the course requirements, showcasing skills in web development, PHP, MySQL, and frontend technologies like HTML, CSS, and Bootstrap.
 
 Features
 
-	•	Product Listings: Browse through an extensive range of computers, gaming systems, and hardware components like motherboards, graphics cards, CPUs, and more.
-	•	Search Functionality: Easily search for products using categories or keywords to find exactly what you need.
-	•	Secure Checkout: Secure and streamlined checkout process, with multiple payment options available.
-	•	User Account System: Register and manage your account to track orders, save products, and access personalized recommendations.
-	•	Customer Support: Quick customer support for resolving issues or addressing queries regarding products and orders.
-	•	Complaints & Feedback: Submit product complaints, with an option to track the status of your complaint and replies from the support team.
+	•	User Registration & Login: Users can register, log in, and manage their account.
+	•	Product Catalog: A variety of products including computers, gaming PCs, and accessories are listed.
+	•	Search & Filter: Products can be searched and filtered based on categories and attributes.
+	•	Order Management: Users can view and track their orders.
+	•	Complaint Management: Customers can submit complaints regarding products and track their status.
+	•	Responsive Design: Fully responsive for both desktop and mobile devices.
 
 Technologies Used
 
 	•	Frontend:
-	•	HTML, CSS, JavaScript
-	•	Bootstrap for responsive design
-	•	jQuery for interactive features
+	•	HTML
+	•	CSS
+	•	Bootstrap
+	•	JavaScript
 	•	Backend:
-	•	PHP for server-side processing
-	•	MySQL for database management
-	•	Payment Integration:
-	•	Integration with secure payment gateways (e.g., PayPal, Stripe)
+	•	PHP (Server-Side Scripting)
+	•	MySQL (Database)
+	•	Tools:
+	•	XAMPP (For local development server)
+	•	Git (Version control)
 
 Installation
 
-To set up and run the project locally, follow these steps:
-	1.	Clone the repository:
+	1.	Clone this repository or download the project folder.
 
 git clone https://github.com/reformedbrush/computer-_emporium_sourcceCode
-cd tech-shack
 
 
-	2.	Set up the database:
-Create a MySQL database and import the schema provided in the db.sql file to set up the necessary tables.
-	3.	Configure database connection:
-In the connection.php file, configure the database connection settings such as database host, username, password, and database name.
-	4.	Start a local server:
-You can use XAMPP or any local server to run the PHP files. Place the project files in the htdocs directory and start the Apache and MySQL servers.
-	5.	Access the site:
-Open a browser and navigate to http://localhost/computer-_emporium_sourcceCode/ to view the site.
+	2.	Set up a local server using XAMPP or any LAMP stack.
+	3.	Create a database in MySQL and import the provided SQL file (tech_shack.sql) to set up the required tables.
+	4.	Update the database connection in the connection.php file:
 
-Usage
+$con = new mysqli('localhost', 'username', 'password', 'database_name');
 
-	1.	Browse Products: Navigate through the product categories or use the search bar to find specific items.
-	2.	Add to Cart: Add your desired products to the cart for checkout.
-	3.	Checkout: Once your cart is ready, proceed to checkout by filling in your shipping and payment information.
-	4.	Track Orders: Log in to your account to track the status of your orders and view previous purchase history.
-	5.	Customer Support: If you have any issues with your order or product, submit a complaint or contact customer support.
 
-Contributing
+	5.	Run the project in your browser at localhost/TechShack.
 
-We welcome contributions from the community to improve the project. If you’d like to contribute, follow these steps:
-	1.	Fork the repository.
-	2.	Create a new branch (git checkout -b feature-branch).
-	3.	Make your changes.
-	4.	Commit your changes (git commit -am 'Add new feature').
-	5.	Push to the branch (git push origin feature-branch).
-	6.	Open a pull request.
+How to Use
+
+	1.	User Registration & Login:
+	•	Register a new user or log in if you already have an account.
+	2.	Product Browsing:
+	•	Browse the product catalog, view product details, and add items to the cart.
+	3.	Place Orders:
+	•	Checkout and place orders for your selected products.
+	4.	Submit Complaints:
+	•	If there are any issues with your product, you can submit a complaint.
+	5.	Track Complaints:
+	•	View the status and reply of your complaint through the complaint management system.
+
+
+Contributions
+
+Feel free to fork this project and make contributions. If you encounter any issues or want to suggest improvements, please open an issue or submit a pull request.
 
 License
 
-This project is open source and available under the MIT License.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contact
-
-For any questions, concerns, or feedback, please contact us at info@techshack.com.
-
-Let me know if you’d like to add or modify anything!
+Let me know if you’d like any modifications or additions to this!
