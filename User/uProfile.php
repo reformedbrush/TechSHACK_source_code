@@ -12,49 +12,87 @@ $data=$res->fetch_assoc();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>User Profile</title>
+  <style>
+    .user-detail-section {
+        width: 60%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        font-family: Arial, sans-serif;
+    }
+    .user-detail-section h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .user-detail-section table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .user-detail-section td {
+        padding: 12px;
+        vertical-align: top;
+        color: #555;
+    }
+    .user-detail-section td:first-child {
+        font-weight: bold;
+        color: #333;
+        width: 30%;
+    }
+    .actions {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .actions a.button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        color: #ffffff;
+        background-color: #3b5d50;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    .actions a.button:hover {
+        background-color: #2e4a40;
+    }
+  </style>
 </head>
 <body>
-<form name="form1" method="post" action="">
-  <table width="200" border="1">
+
+<div class="user-detail-section">
+  <h2>User Profile</h2>
+  <table>
     <tr>
       <td>Name</td>
-      <td><?php
-        echo $data['user_name']
-      ?></td>
+      <td><?php echo $data['user_name']; ?></td>
     </tr>
     <tr>
       <td>Contact</td>
-      <td><?php
-        echo $data['user_number']
-      ?></td>
+      <td><?php echo $data['user_number']; ?></td>
     </tr>
     <tr>
-      <td>E-mail</td>
-      <td><?php
-        echo $data['user_email']
-      ?></td>
+      <td>Email</td>
+      <td><?php echo $data['user_email']; ?></td>
     </tr>
     <tr>
       <td>Address</td>
-      <td><?php
-        echo $data['user_address']
-      ?></td>
+      <td><?php echo $data['user_address']; ?></td>
     </tr>
-    <tr>
-      <td colspan="2">
-      <a href="userEdit.php">Edit</a> 
-      </td>
-    </tr>
-    <tr>
-      <td><a href="userChangePass.php">Change Password</a>
-</td>
-</tr>
-<tr><td><a href="MyBooking.php">My Orders</a></td></tr>
-
   </table>
-</form>
+  <div class="actions">
+    <a href="userEdit.php" class="button">Edit</a>
+    <a href="userChangePass.php" class="button">Change Password</a>
+    <a href="MyBooking.php" class="button">My Orders</a>
+  </div>
+</div>
+
 <a href="SearchProduct.php">Search</a>
+
 </body>
 </html>
 <?php
