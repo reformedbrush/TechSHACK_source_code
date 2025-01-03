@@ -335,11 +335,11 @@
         <div class="form-container sign-in-container">
             <form action="#" method="post">
                 <h1>Sign in</h1>
-                <div class="social-container">
+                <!-- <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                </div> -->
                 <span>or use your account</span>
                 <input type="email" name="email" placeholder="Email" required />
                 <input type="password" name="password" placeholder="Password" required />
