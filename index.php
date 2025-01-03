@@ -66,7 +66,7 @@
 							<div class="intro-excerpt">
 								<h1>Modern Tech <span clsas="d-block">Super Store</span></h1>
 								<p class="mb-4">Discover top-tier tech products, from smartphones to smart home devices, all at competitive prices. Shop now for the newest innovations and elevate your digital experience!</p>
-								<p><a href="User/SearchProduct.php" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+								<p><a href="User/SearchProduct.php" class="btn btn-secondary me-2">Shop Now</a></p>
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -88,13 +88,13 @@
 					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
 						<h2 class="mb-4 section-title">Crafted with excellence</h2>
 						<p class="mb-4">High-performance, pre-built desktop designed for gamers, featuring sleek cases, powerful components, efficient cooling, and customizable RGB lighting. It offers smooth gameplay, excellent graphics, and easy upgrades. </p>
-						<p><a href="shop.html" class="btn">Explore</a></p>
+						<p><a href="Guest/login.php" class="btn">Explore</a></p>
 					</div> 
 					<!-- End Column 1 -->
 
 					<!-- Start Column 2 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<a class="product-item" href="Guest/login.php">
 							<img src="Assets/Templates/Main/images/p1.png" class="img-fluid product-thumbnail">
 							<h3 class="product-title">Machine 1</h3>
 							<strong class="product-price">₹275000.00</strong>
@@ -108,7 +108,7 @@
 
 					<!-- Start Column 3 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<a class="product-item" href="Guest/login.php">
 							<img src="Assets/Templates/Main/images/p3.png" class="img-fluid product-thumbnail">
 							<h3 class="product-title">Machine 2</h3>
 							<strong class="product-price">₹125000.00</strong>
@@ -122,7 +122,7 @@
 
 					<!-- Start Column 4 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<a class="product-item" href="Guest/login.php">
 							<img src="Assets/Templates/Main/images/p2.png" class="img-fluid product-thumbnail">
 							<h3 class="product-title">Machine 3</h3>
 							<strong class="product-price">₹243000.00</strong>
@@ -223,7 +223,6 @@
 							<li>Donec vitae odio quis nisl dapibus malesuada</li>
 							<li>Donec vitae odio quis nisl dapibus malesuada</li>
 						</ul>
-						<p><a herf="#" class="btn">Explore</a></p>
 					</div>
 				</div>
 			</div>
@@ -231,7 +230,7 @@
 		<!-- End We Help Section -->
 
 		<!-- Start Popular Product -->
-		<div class="popular-product">
+		<!-- <div class="popular-product">
 			<div class="container">
 				<div class="row">
 
@@ -276,7 +275,7 @@
 
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- End Popular Product -->
 
 		<!-- Start Testimonial Slider -->
@@ -305,15 +304,15 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+													<p>&ldquo;Tech Shack is my go-to store for high-quality computers and components. Their reliable service, competitive prices, and exceptional product range make tech shopping a breeze. Highly recommend for all your tech needs!&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="Assets/Templates/Main/images/techRadarlogo.png" alt="Maria Jones" class="img-fluid">
+														<img src="Assets/Templates/Main/images/me3.jpg" alt="Akshai R Sangeeth" class="img-fluid">
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													<h3 class="font-weight-bold">Akshai R Sangeeth</h3>
+													<span class="position d-block mb-3">Co-Founder, TechSHACK Inc.</span>
 												</div>
 											</div>
 
@@ -328,38 +327,15 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+													<p>&ldquo;Tech Shack offers an outstanding selection of tech products, from gaming PCs to hardware components. With excellent customer service and fast delivery, they make upgrading your setup seamless and hassle-free!&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+														<img src="Assets/Templates/Main/images/anto1.jpeg" alt="Antony Joji" class="img-fluid">
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -->
-
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
-													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													<h3 class="font-weight-bold">Antony Joji</h3>
+													<span class="position d-block mb-3">CEO, Co-Founder, TechSHACK Inc.</span>
 												</div>
 											</div>
 
@@ -378,7 +354,7 @@
 		<!-- End Testimonial Slider -->
 
 		<!-- Start Blog Section -->
-		<div class="blog-section">
+		<!-- <div class="blog-section">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-6">
@@ -429,18 +405,15 @@
 
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- End Blog Section -->	
 
 		<!-- Start Footer Section -->
 		<footer class="footer-section">
 			<div class="container relative">
 
-				<div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
-				</div>
 
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-lg-8">
 						<div class="subscription-form">
 							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
@@ -461,12 +434,12 @@
 
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
 						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">TECH Shack<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+						<p class="mb-4">High-performance, pre-built desktop designed for gamers, featuring sleek cases, powerful components, efficient cooling, and customizable RGB lighting. It offers smooth gameplay, excellent graphics, and easy upgrades.</p>
 
 						<ul class="list-unstyled custom-social">
 							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
