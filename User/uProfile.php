@@ -1,6 +1,5 @@
 <?php
 include("../Assets/Connection/connection.php");
-session_start();
 ob_start();
 include("Head.php");
 $user="select * from tbl_user where user_id=".$_SESSION['uid'];
@@ -88,6 +87,7 @@ $data=$res->fetch_assoc();
     <a href="userEdit.php" class="button">Edit</a>
     <a href="userChangePass.php" class="button">Change Password</a>
     <a href="MyBooking.php" class="button">My Orders</a>
+    <a href="MyComplaint.php" class="button">My Complaints</a> 
   </div>
 </div>
 
