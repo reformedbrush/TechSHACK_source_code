@@ -10,8 +10,18 @@ if (isset($_POST["btn_submit"])) {
   $contact = $_POST['txt_number'];
   
   $insQry = "insert into tbl_user(user_name,user_email,user_password,place_id,user_address,user_number) values('".$name."','".$email."','".$password."','".$place."','".$address."','".$contact."')";
-  
+  if ($con->query($insQry)) {
+    ?>
+    <script>
+      alert('Inserted..');
+      window.location="login.php";
+    </script>
+    <?php
+  }
 }
+?> 
+
+<?php
 
 if (isset($_GET['did'])) {
   $did = $_GET['did'];
