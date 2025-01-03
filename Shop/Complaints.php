@@ -43,7 +43,9 @@ include("Head.php");
                         <td>
                         <?php
                             if($row['complaint_status']==0){
-                                echo "Shop hasn't reviewed the complaint";
+                                ?>
+                                       <a href="Reply.php?cid=<?php echo $row['complaint_id'] ?>">Reply</a> 
+                                <?php
                             }
                             else{
                                 echo $row['complaint_reply'];  

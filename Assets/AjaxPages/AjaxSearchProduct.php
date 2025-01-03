@@ -15,7 +15,7 @@ session_start();
 
             $subcategory = $_GET["subcategory"];
 
-            $sqlQry = $sqlQry." AND sc.sub_id IN(".$subcategory.")";
+            $sqlQry = $sqlQry." AND sc.subCategory_id IN(".$subcategory.")";
         }
 		
 		if ($_GET["name"]!=null) {

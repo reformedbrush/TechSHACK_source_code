@@ -169,9 +169,10 @@ function changeSub()
 
                     var action = 'data';
                     var category = get_filter_text('category');
-                    var subcategory = get_filter_text('subcategory');
+                    var subcategory = get_filter_text('subCategory');
 					var name = document.getElementById('txt_name').value;
-					
+					console.log(subcategory);
+                    
 
 
                     $.ajax({
