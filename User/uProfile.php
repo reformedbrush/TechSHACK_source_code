@@ -30,6 +30,7 @@ $data=$res->fetch_assoc();
     .user-detail-section table {
         width: 100%;
         border-collapse: collapse;
+        margin: auto; /* Centers the table */
     }
     .user-detail-section td {
         padding: 12px;
@@ -90,8 +91,6 @@ $data=$res->fetch_assoc();
     <a href="MyComplaint.php" class="button">My Complaints</a> 
   </div>
 </div>
-
-<a href="SearchProduct.php">Search</a>
 
 </body>
 </html>

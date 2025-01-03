@@ -5,9 +5,9 @@
 				<div class="row">
 					<div class="col-lg-8">
 						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="../Assets/Templates/Main/images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+							<!--<h3 class="d-flex align-items-center"><span class="me-1"><img src="../Assets/Templates/Main/images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
 
-							<form action="#" class="row g-3">
+							 <form action="#" class="row g-3">
 								<div class="col-auto">
 									<input type="text" class="form-control" placeholder="Enter your name">
 								</div>
@@ -19,7 +19,7 @@
 										<span class="fa fa-paper-plane"></span>
 									</button>
 								</div>
-							</form>
+							</form> -->
 
 						</div>
 					</div>

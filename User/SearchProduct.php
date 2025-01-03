@@ -95,7 +95,7 @@ include("../Assets/Connection/Connection.php");
                 <div class="col-lg-9">
                     <h5 class="text-center" id="textChange">All Products</h5>
                     <hr>
-                    <h6 class="pr-3" align="right"><a href="MYCart.php">My Cart</a></h6>
+                    
                     <div class="text-center">
                         <img src="../Assets/Templates/Search/loader.gif" id='loder' width="200" style="display: none"/>
                     </div>
