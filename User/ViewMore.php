@@ -92,7 +92,26 @@ include("../Assets/Connection/Connection.php");
                     <p><strong>Seller:</strong> <?php echo $row['shop_name']; ?></p>
                     <p><strong>Contact:</strong> <?php echo $row['shop_contact']; ?></p>
                 </div>
+                <?php
+                $stock = "select sum(stock_qty) as stock from tbl_stock where product_id = '" . $row["product_id"] . "'";
+											$result2 = $con->query($stock);
+                            				$row2=$result2->fetch_assoc();
+											
+											$stocka = "select sum(cart_qty) as stock from tbl_cart where product_id = '" . $row["product_id"] . "'";
+											$result2a = $con->query($stocka);
+                            				$row2a=$result2a->fetch_assoc();
+											
+											$stock = $row2["stock"] - $row2a["stock"];
+                                            if ($stock > 0) {
+											?>
+                
                 <button type="button" class="btn btn-primary btn-buy" onclick="addCart('<?php echo $row['product_id']; ?>')">Add to Cart</button>
+                <?php
+                                            }
+                                            else{
+                                                echo "<p class='text-danger'>Out of stock</p>";
+                                            }
+                                            ?>
             </div>
             
             <?php 
