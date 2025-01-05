@@ -208,6 +208,53 @@ include("../Assets/Connection/connection.php");
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js'></script><script  src="./script.js"></script>
+        <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form submission
+        let valid = true;
+
+        // Clear existing error messages
+        document.querySelectorAll(".error").forEach(function (error) {
+            error.remove();
+        });
+
+        // Helper function to display error messages
+        function showError(input, message) {
+            const errorElement = document.createElement("div");
+            errorElement.className = "error";
+            errorElement.style.color = "red";
+            errorElement.style.fontSize = "12px";
+            errorElement.style.marginTop = "5px";
+            errorElement.textContent = message;
+            input.parentElement.appendChild(errorElement);
+        }
+
+        // Card Holder Validation: Non-empty and letters only
+        const cardHolder = document.querySelector('input[placeholder="Card Holder"]');
+        if (!/^[A-Za-z ]+$/.test(cardHolder.value.trim())) {
+            showError(cardHolder, "Card holder name must contain only letters and spaces.");
+            valid = false;
+        }
+
+        // Card Number Validation: Exactly 16 digits (ignoring spaces)
+        const cardNumber = document.querySelector('input[placeholder="Card Number"]');
+        const sanitizedCardNumber = cardNumber.value.replace(/\s+/g, ""); // Remove spaces
+        if (!/^\d{16}$/.test(sanitizedCardNumber)) {
+            showError(cardNumber, "Card number must be exactly 16 digits.");
+            valid = false;
+        }
+
+        // Expiry Date Validation: MM/YY format and future date
+        const expiryDate = document.querySelector('input[name="expiry-data"]');
+        const expiryValue = expiryDate.value.trim(); // Remove extra spaces
+        if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryValue)) {
+            showError(expiryDate, "Expiry date must be in MM/YY format.");
+            valid = false;
+        } else {
+            const expiryParts = expiryValue.split("/");
+            const currentDate = new Date();
+            const inputDate = new Date(`20${expiryParts[1]}`, expiryParts[0] - 1); // Month is zero-based
+            if (
 
     </body>
 </html>

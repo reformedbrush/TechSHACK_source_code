@@ -30,7 +30,7 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">TECH Shack<span>.</span></a>
+				<a class="navbar-brand" href="index.html">Computer Emporium<span>.</span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -145,7 +145,7 @@
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
 						<h2 class="section-title">Why Choose Us</h2>
-						<p>TECH Shack delivers the latest tech at great prices, with fast shipping and reliable customer support. Shop with us for a smooth experience and top-quality gadgets!</p>
+						<p>Computer Emporium delivers the latest tech at great prices, with fast shipping and reliable customer support. Shop with us for a smooth experience and top-quality gadgets!</p>
 
 						<div class="row my-5">
 							<div class="col-6 col-md-6">
@@ -304,7 +304,7 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Tech Shack is my go-to store for high-quality computers and components. Their reliable service, competitive prices, and exceptional product range make tech shopping a breeze. Highly recommend for all your tech needs!&rdquo;</p>
+													<p>&ldquo;Computer Emporium is my go-to store for high-quality computers and components. Their reliable service, competitive prices, and exceptional product range make tech shopping a breeze. Highly recommend for all your tech needs!&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
@@ -312,7 +312,7 @@
 														<img src="Assets/Templates/Main/images/me3.jpg" alt="Akshai R Sangeeth" class="img-fluid">
 													</div>
 													<h3 class="font-weight-bold">Akshai R Sangeeth</h3>
-													<span class="position d-block mb-3">Co-Founder, TechSHACK Inc.</span>
+													<span class="position d-block mb-3">Co-Founder, Computer Emporium Inc.</span>
 												</div>
 											</div>
 
@@ -327,7 +327,7 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Tech Shack offers an outstanding selection of tech products, from gaming PCs to hardware components. With excellent customer service and fast delivery, they make upgrading your setup seamless and hassle-free!&rdquo;</p>
+													<p>&ldquo;Computer Emporium offers an outstanding selection of tech products, from gaming PCs to hardware components. With excellent customer service and fast delivery, they make upgrading your setup seamless and hassle-free!&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
@@ -335,7 +335,7 @@
 														<img src="Assets/Templates/Main/images/anto1.jpeg" alt="Antony Joji" class="img-fluid">
 													</div>
 													<h3 class="font-weight-bold">Antony Joji</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, TechSHACK Inc.</span>
+													<span class="position d-block mb-3">CEO, Co-Founder, Computer Emporium Inc.</span>
 												</div>
 											</div>
 
@@ -438,7 +438,7 @@
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">TECH Shack<span>.</span></a></div>
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Computer Emporium<span>.</span></a></div>
 						<p class="mb-4">High-performance, pre-built desktop designed for gamers, featuring sleek cases, powerful components, efficient cooling, and customizable RGB lighting. It offers smooth gameplay, excellent graphics, and easy upgrades.</p>
 
 						<ul class="list-unstyled custom-social">
@@ -492,7 +492,7 @@
 				<div class="border-top copyright">
 					<div class="row pt-4">
 						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright TECH Shack&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; </a>  <!-- License information: https://untree.co/license/ -->
+							<p class="mb-2 text-center text-lg-start">Copyright Computer Emporium&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; </a>  <!-- License information: https://untree.co/license/ -->
             </p>
 						</div>
 

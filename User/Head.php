@@ -17,7 +17,7 @@ include("SessionValidator.php");
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="../Assets/Templates/Main/css/tiny-slider.css" rel="stylesheet">
 		<link href="../Assets/Templates/Main/css/style.css" rel="stylesheet">
-		<title>TECHShack </title>
+		<title>ComputerEmporium </title>
 	</head>
 
 	<body>
@@ -26,7 +26,7 @@ include("SessionValidator.php");
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="../index.php">TECH Shack<span>.</span></a>
+				<a class="navbar-brand" href="../index.php">Computer Emporium<span>.</span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>

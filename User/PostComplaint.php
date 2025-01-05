@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("../Assets/Connection/Connection.php");
 include("Head.php");
 if(isset($_POST['btn_submit']))

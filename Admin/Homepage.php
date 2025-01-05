@@ -71,8 +71,8 @@ include("Head.php");
                 <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
                   <div class="card card-light-blue">
                     <div class="card-body">
-                      <p class="mb-4">Number of Meetings</p>
-                      <p class="fs-30 mb-2">34040</p>
+                      <p class="mb-4">Number of Sales</p>
+                      <p class="fs-30 mb-2">424</p>
                       <p>2.00% (30 days)</p>
                     </div>
                   </div>
@@ -81,7 +81,7 @@ include("Head.php");
                   <div class="card card-light-danger">
                     <div class="card-body">
                       <p class="mb-4">Number of Clients</p>
-                      <p class="fs-30 mb-2">47033</p>
+                      <p class="fs-30 mb-2">2</p>
                       <p>0.22% (30 days)</p>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ include("Head.php");
                 </div>
               </div>
             </div> -->
-            <div class="col-md-6 grid-margin stretch-card">
+            <!-- <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                  <div class="d-flex justify-content-between">
@@ -130,7 +130,7 @@ include("Head.php");
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card position-relative">
@@ -311,7 +311,7 @@ include("Head.php");
               </div>
             </div>
           </div> -->
-          <div class="row">
+         <!--  <div class="row">
             <div class="col-md-7 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -374,7 +374,7 @@ include("Head.php");
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
            <!--  <div class="col-md-5 grid-margin stretch-card">
 							<div class="card">
 								<div class="card-body">
@@ -435,7 +435,7 @@ include("Head.php");
 								</div>
 							</div>
             </div> -->
-          </div>
+         <!--  </div>
           <div class="row">
             <div class="col-md-4 stretch-card grid-margin">
               <div class="card">
@@ -646,7 +646,7 @@ include("Head.php");
 
                 
               </div>
-            </div>
+            </div> -->
         <?php
         include("Foot.php");
         ob_flush();

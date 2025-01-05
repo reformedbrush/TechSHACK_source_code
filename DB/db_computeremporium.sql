@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2025 at 06:43 AM
+-- Generation Time: Jan 05, 2025 at 05:50 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.5
 
@@ -55,15 +55,6 @@ CREATE TABLE `tbl_booking` (
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `tbl_booking`
---
-
-INSERT INTO `tbl_booking` (`booking_id`, `booking_date`, `booking_amount`, `booking_status`, `user_id`) VALUES
-(19, '2025-01-03', 3999, 1, 25),
-(20, '2025-01-03', 3999, 1, 25),
-(21, '2025-01-03', 3999, 2, 25);
-
 -- --------------------------------------------------------
 
 --
@@ -78,17 +69,6 @@ CREATE TABLE `tbl_cart` (
   `tracking_id` int(11) NOT NULL,
   `booking_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tbl_cart`
---
-
-INSERT INTO `tbl_cart` (`cart_id`, `cart_qty`, `cart_status`, `product_id`, `tracking_id`, `booking_id`) VALUES
-(20, 1, 3, 12, 0, 17),
-(21, 1, 3, 12, 2546545, 18),
-(22, 1, 1, 17, 0, 19),
-(23, 1, 1, 17, 0, 20),
-(24, 1, 3, 30, 545454, 21);
 
 -- --------------------------------------------------------
 
@@ -129,13 +109,6 @@ CREATE TABLE `tbl_complaint` (
   `complaint_date` varchar(30) NOT NULL,
   `complaint_reply` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tbl_complaint`
---
-
-INSERT INTO `tbl_complaint` (`complaint_id`, `complaint_title`, `complaint_content`, `product_id`, `complaint_status`, `user_id`, `complaint_date`, `complaint_reply`) VALUES
-(10, 'goood', 'no good', 30, 1, 25, '2025-01-03', 'poda');
 
 -- --------------------------------------------------------
 
@@ -188,9 +161,19 @@ CREATE TABLE `tbl_place` (
 INSERT INTO `tbl_place` (`place_id`, `place_name`, `place_pincode`, `district_id`) VALUES
 (1, 'kochi', 0, 3),
 (2, 'Kattapana', 0, 6),
-(3, '', 0, 0),
 (6, 'Muvattupuzha', 0, 3),
-(8, 'Thiruvalla', 0, 4);
+(8, 'Thiruvalla', 0, 4),
+(9, 'Palakkad', 0, 11),
+(10, 'Kollam', 0, 13),
+(11, 'Thiruvananthapuram', 0, 12),
+(12, 'Alappuzha', 0, 14),
+(13, 'Pathanamthitta', 0, 15),
+(14, 'Thrissur', 0, 16),
+(15, 'Malappuram', 0, 17),
+(16, 'Kozhikode', 0, 18),
+(17, 'Wayanad', 0, 19),
+(18, 'Kannur', 0, 20),
+(19, 'Kasargod', 0, 21);
 
 -- --------------------------------------------------------
 
@@ -243,17 +226,6 @@ CREATE TABLE `tbl_rating` (
   `product_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `tbl_rating`
---
-
-INSERT INTO `tbl_rating` (`rating_id`, `user_id`, `rating_value`, `rating_content`, `rating_datetime`, `product_id`) VALUES
-(1, 19, 4, 'hai', '2024-09-27 18:12:14', 4),
-(2, 25, 5, 'Best gaming PC!!', '2024-10-15 22:29:48', 13),
-(3, 19, 5, 'Good\n', '2024-11-07 17:16:08', 12),
-(4, 25, 4, 'gg', '2025-01-03 12:02:29', 12),
-(5, 25, 4, 'giid\n', '2025-01-03 16:23:14', 30);
-
 -- --------------------------------------------------------
 
 --
@@ -301,7 +273,17 @@ CREATE TABLE `tbl_stock` (
 
 INSERT INTO `tbl_stock` (`stock_id`, `stock_qty`, `stock_date`, `product_id`, `shop_id`) VALUES
 (4, 10, '2025-01-03', 15, 0),
-(5, 10, '2025-01-03', 16, 0);
+(5, 10, '2025-01-03', 16, 0),
+(6, 1, '2025-01-05', 17, 0),
+(7, 3, '2025-01-05', 19, 0),
+(8, 10, '2025-01-05', 20, 0),
+(9, 1, '2025-01-05', 22, 0),
+(10, 10, '2025-01-05', 24, 0),
+(11, 2, '2025-01-05', 26, 0),
+(12, 10, '2025-01-05', 27, 0),
+(13, 10, '2025-01-05', 28, 0),
+(14, 10, '2025-01-05', 29, 0),
+(15, 1, '2025-01-05', 30, 0);
 
 -- --------------------------------------------------------
 
@@ -355,8 +337,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_email`, `user_address`, `user_password`, `place_id`, `user_number`) VALUES
-(25, 'Akshai ', 'akshai@gmail.com', 'asd', 'Akshai@123', 1, '9946656696'),
-(27, 'Bimi', 'bimi@gmail.com', 'asda', 'Bimi@123', 2, '9946656695');
+(25, 'Akshai ', 'akshai@gmail.com', 'asd', 'Akshai@123', 1, '9946656696');
 
 --
 -- Indexes for dumped tables
@@ -454,13 +435,13 @@ ALTER TABLE `tbl_admin`
 -- AUTO_INCREMENT for table `tbl_booking`
 --
 ALTER TABLE `tbl_booking`
-  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `tbl_category`
@@ -484,7 +465,7 @@ ALTER TABLE `tbl_district`
 -- AUTO_INCREMENT for table `tbl_place`
 --
 ALTER TABLE `tbl_place`
-  MODIFY `place_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `place_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `tbl_product`
@@ -508,7 +489,7 @@ ALTER TABLE `tbl_shop`
 -- AUTO_INCREMENT for table `tbl_stock`
 --
 ALTER TABLE `tbl_stock`
-  MODIFY `stock_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `stock_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tbl_subcategory`

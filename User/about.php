@@ -123,7 +123,7 @@
     </tr>
     <tr>
       <td>Email</td>
-      <td>info@techshack.com</td>
+      <td>info@ce.com</td>
     </tr>
     <tr>
       <td>Phone</td>

@@ -27,7 +27,7 @@
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">TECH Shack<span>.</span></a></div>
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Computer Emporium<span>.</span></a></div>
 						<p class="mb-4">Discover top-tier tech products, from smartphones to smart home devices, all at competitive prices. Shop now for the newest innovations and elevate your digital experience!</p>
 
 						<ul class="list-unstyled custom-social">

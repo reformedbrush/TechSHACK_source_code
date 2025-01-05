@@ -8,7 +8,7 @@ include("SessionValidator.php");
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>Seller Dashboard</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../Assets/Templates/Admin/vendors/feather/feather.css">
   <link rel="stylesheet" href="../Assets/Templates/Admin/vendors/ti-icons/css/themify-icons.css">
@@ -106,7 +106,7 @@ include("SessionValidator.php");
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>
-              <a class="dropdown-item">
+              <a href="../Guest/LogOut.php" class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
