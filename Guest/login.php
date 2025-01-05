@@ -124,8 +124,8 @@
 
         button {
             border-radius: 20px;
-            border: 1px solid #FF4B2B;
-            background-color: #FF4B2B;
+            border: 1px solid #3b5d50;
+            background-color: #3b5d50;
             color: #FFFFFF;
             font-size: 12px;
             font-weight: bold;
@@ -238,9 +238,9 @@
         }
 
         .overlay {
-            background: #FF416C;
-            background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-            background: linear-gradient(to right, #FF4B2B, #FF416C);
+            background: #3b5d50;
+            background: -webkit-linear-gradient(to bottom,rgb(127, 168, 153), #3b5d50);
+            background: linear-gradient(to bottom, rgb(127, 168, 153), #3b5d50);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
@@ -343,7 +343,7 @@
                 <span>or use your account</span>
                 <input type="email" name="email" placeholder="Email" required />
                 <input type="password" name="password" placeholder="Password" required />
-                <a href="#">Forgot your password?</a>
+                <a href="ForgetPass.php">Forgot your password?</a>
                 <button type="submit" name="Login">Sign In</button>
             </form>
         </div>
@@ -355,8 +355,8 @@
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
+				<h1>Hello!</h1>
+				<p>Enter your details and start your journey with us</p>
 				<!-- <button class="ghost" id="signUp">Sign Up</button> -->
 			</div>
 		</div>
