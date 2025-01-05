@@ -44,10 +44,12 @@ if (isset($_GET['did'])) {
   <style>
     body {
       background-color: #f7f7f7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
     }
     .registration-form {
       background: #fff;
