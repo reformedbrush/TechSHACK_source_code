@@ -44,40 +44,45 @@ if (isset($_GET['did'])) {
   <style>
     body {
       background-color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
     .registration-form {
       background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
       width: 100%;
-      max-width: 500px;
     }
     .registration-form h1 {
       margin-bottom: 20px;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: bold;
       text-align: center;
     }
     .btn-custom {
       background-color: #007bff;
-      color: white;
+      color: #fff;
     }
     .btn-custom:hover {
       background-color: #0056b3;
     }
-    .form-group{
-      max-width:500px;
+    .form-group label {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .form-control {
+      height: 35px;
+      font-size: 14px;
     }
   </style>
 </head>
-
 <body>
   <div class="registration-form">
     <h1>User Registration</h1>
@@ -178,7 +183,7 @@ if (isset($_GET['did'])) {
   </div>
 
   <!-- jQuery and Bootstrap JS -->
-   <script src="../Assets/JQ/JQuery.js"></script>
+  <script src="../Assets/JQ/JQuery.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 

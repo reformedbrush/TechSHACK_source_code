@@ -165,8 +165,7 @@ include("../Assets/Connection/connection.php");
 		 }
     }?>
     <body>
-        <!-- partial:index.partial.html -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 
         <div class="wrapper">
             <div class="payment">
@@ -212,27 +211,17 @@ include("../Assets/Connection/connection.php");
     document.querySelector("form").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent form submission
         let valid = true;
+        let errorMessages = []; // Array to collect error messages
 
-        // Clear existing error messages
+        // Clear any previous error messages
         document.querySelectorAll(".error").forEach(function (error) {
             error.remove();
         });
 
-        // Helper function to display error messages
-        function showError(input, message) {
-            const errorElement = document.createElement("div");
-            errorElement.className = "error";
-            errorElement.style.color = "red";
-            errorElement.style.fontSize = "12px";
-            errorElement.style.marginTop = "5px";
-            errorElement.textContent = message;
-            input.parentElement.appendChild(errorElement);
-        }
-
         // Card Holder Validation: Non-empty and letters only
         const cardHolder = document.querySelector('input[placeholder="Card Holder"]');
         if (!/^[A-Za-z ]+$/.test(cardHolder.value.trim())) {
-            showError(cardHolder, "Card holder name must contain only letters and spaces.");
+            errorMessages.push("Card holder name must contain only letters and spaces.");
             valid = false;
         }
 
@@ -240,7 +229,7 @@ include("../Assets/Connection/connection.php");
         const cardNumber = document.querySelector('input[placeholder="Card Number"]');
         const sanitizedCardNumber = cardNumber.value.replace(/\s+/g, ""); // Remove spaces
         if (!/^\d{16}$/.test(sanitizedCardNumber)) {
-            showError(cardNumber, "Card number must be exactly 16 digits.");
+            errorMessages.push("Card number must be exactly 16 digits.");
             valid = false;
         }
 
@@ -248,13 +237,34 @@ include("../Assets/Connection/connection.php");
         const expiryDate = document.querySelector('input[name="expiry-data"]');
         const expiryValue = expiryDate.value.trim(); // Remove extra spaces
         if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryValue)) {
-            showError(expiryDate, "Expiry date must be in MM/YY format.");
+            errorMessages.push("Expiry date must be in MM/YY format.");
             valid = false;
         } else {
             const expiryParts = expiryValue.split("/");
             const currentDate = new Date();
             const inputDate = new Date(`20${expiryParts[1]}`, expiryParts[0] - 1); // Month is zero-based
-            if (
+            if (inputDate < currentDate) {
+                errorMessages.push("Expiry date must be in the future.");
+                valid = false;
+            }
+        }
+
+        // CVV Validation: Exactly 3 digits
+        const cvv = document.querySelector('input[placeholder="000"]');
+        if (!/^\d{3}$/.test(cvv.value.trim())) {
+            errorMessages.push("CVV must be exactly 3 digits.");
+            valid = false;
+        }
+
+        // If there are errors, show them in an alert
+        if (!valid) {
+            alert("Errors found:\n" + errorMessages.join("\n"));
+        } else {
+            alert("Payment details are valid. Proceeding with payment...");
+            e.target.submit(); // Submit the form
+        }
+    });
+</script>
 
     </body>
 </html>

@@ -30,7 +30,7 @@ include("Head.php");
                 <tbody>
                     <?php
                     $i=0;
-                    $selQry="select * from tbl_shop m inner join tbl_product p on m.shop_id=p.shop_id inner join tbl_complaint c on c.product_id=p.product_id inner join tbl_user u on c.user_id=u.user_id where m.shop_id=".$_SESSION['sid'];
+                    $selQry="select * from tbl_shop m inner join tbl_product p on m.shop_id=p.shop_id inner join tbl_complaint c on c.product_id=p.product_id inner join tbl_user u on c.user_id=u.user_id ";
                     $result=$con->query($selQry);
                     while($row=$result->fetch_assoc()) {
                         $i++;

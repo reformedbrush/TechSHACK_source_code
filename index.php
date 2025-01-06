@@ -65,7 +65,7 @@
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
 								<h1>Modern Tech <span clsas="d-block">Super Store</span></h1>
-								<p class="mb-4">Discover top-tier tech products, from smartphones to smart home devices, all at competitive prices. Shop now for the newest innovations and elevate your digital experience!</p>
+								<p class="mb-4">High-performance, pre-built desktop designed for gamers, featuring sleek cases, powerful components, efficient cooling, and customizable RGB lighting. It offers smooth gameplay, excellent graphics, and easy upgrades.</p>
 								<p><a href="User/SearchProduct.php" class="btn btn-secondary me-2">Shop Now</a></p>
 							</div>
 						</div>
