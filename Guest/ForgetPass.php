@@ -92,11 +92,19 @@
     <div class="container">
         <h1>Forgot Password</h1>
         <p>Enter your email address below, and we'll send you instructions to reset your password.</p>
-        <form action="#" method="post">
+        <form id="forgotPasswordForm" action="#" method="post">
             <input type="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Send Reset Link</button>
         </form>
         <a href="login.php">Back to Login</a>
     </div>
+
+    <script>
+        // Add an event listener for form submission
+        document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+            // Show an alert message
+            alert("An email has been sent to your email if you are registered with us.");
+        });
+    </script>
 </body>
 </html>
