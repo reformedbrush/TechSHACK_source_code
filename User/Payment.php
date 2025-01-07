@@ -165,7 +165,8 @@ include("../Assets/Connection/connection.php");
 		 }
     }?>
     <body>
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+        <!-- partial:index.partial.html -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 
         <div class="wrapper">
             <div class="payment">
@@ -208,63 +209,43 @@ include("../Assets/Connection/connection.php");
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js'></script><script  src="./script.js"></script>
         <script>
-    document.querySelector("form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent form submission
-        let valid = true;
-        let errorMessages = []; // Array to collect error messages
+    // Add validation on form submission
+    document.querySelector('form').addEventListener('submit', function(event) {
+        let isValid = true;
+        
+        // Get input values
+        const cardHolder = document.querySelector('input[placeholder="Card Holder"]').value;
+        const cardNumber = document.querySelector('input[placeholder="Card Number"]').value.replace(/\s+/g, ''); // remove spaces
+        const expiryDate = document.querySelector('input[placeholder="00 / 00"]').value;
+        const cvv = document.querySelector('input[placeholder="000"]').value;
 
-        // Clear any previous error messages
-        document.querySelectorAll(".error").forEach(function (error) {
-            error.remove();
-        });
-
-        // Card Holder Validation: Non-empty and letters only
-        const cardHolder = document.querySelector('input[placeholder="Card Holder"]');
-        if (!/^[A-Za-z ]+$/.test(cardHolder.value.trim())) {
-            errorMessages.push("Card holder name must contain only letters and spaces.");
-            valid = false;
+        // Cardholder validation
+        if (cardHolder.trim() === '') {
+            alert('Cardholder name is required');
+            isValid = false;
         }
 
-        // Card Number Validation: Exactly 16 digits (ignoring spaces)
-        const cardNumber = document.querySelector('input[placeholder="Card Number"]');
-        const sanitizedCardNumber = cardNumber.value.replace(/\s+/g, ""); // Remove spaces
-        if (!/^\d{16}$/.test(sanitizedCardNumber)) {
-            errorMessages.push("Card number must be exactly 16 digits.");
-            valid = false;
+        // Card number validation (16 digits)
+        const cardNumberPattern = /^[0-9]{16}$/;
+        if (!cardNumberPattern.test(cardNumber)) {
+            alert('Card number must be 16 digits');
+            isValid = false;
         }
 
-        // Expiry Date Validation: MM/YY format and future date
-        const expiryDate = document.querySelector('input[name="expiry-data"]');
-        const expiryValue = expiryDate.value.trim(); // Remove extra spaces
-        if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryValue)) {
-            errorMessages.push("Expiry date must be in MM/YY format.");
-            valid = false;
-        } else {
-            const expiryParts = expiryValue.split("/");
-            const currentDate = new Date();
-            const inputDate = new Date(`20${expiryParts[1]}`, expiryParts[0] - 1); // Month is zero-based
-            if (inputDate < currentDate) {
-                errorMessages.push("Expiry date must be in the future.");
-                valid = false;
-            }
+        // CVV validation (3 digits)
+        const cvvPattern = /^[0-9]{3}$/;
+        if (!cvvPattern.test(cvv)) {
+            alert('CVV must be 3 digits');
+            isValid = false;
         }
 
-        // CVV Validation: Exactly 3 digits
-        const cvv = document.querySelector('input[placeholder="000"]');
-        if (!/^\d{3}$/.test(cvv.value.trim())) {
-            errorMessages.push("CVV must be exactly 3 digits.");
-            valid = false;
-        }
-
-        // If there are errors, show them in an alert
-        if (!valid) {
-            alert("Errors found:\n" + errorMessages.join("\n"));
-        } else {
-            alert("Payment details are valid. Proceeding with payment...");
-            e.target.submit(); // Submit the form
+        // If any validation failed, prevent form submission
+        if (!isValid) {
+            event.preventDefault();
         }
     });
 </script>
+
 
     </body>
 </html>
